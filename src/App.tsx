@@ -9,6 +9,15 @@ import Privacy from './pages/Privacy';
 import DMCA from './pages/DMCA';
 import Contact from './pages/Contact';
 import Terms from './pages/Terms';
+import { HelmetProvider } from 'react-helmet-async';
+
+function App() {
+  return (
+    <HelmetProvider>
+      {/* Your app components */}
+    </HelmetProvider>
+  );
+}
 
 function App() {
   const location = useLocation();
