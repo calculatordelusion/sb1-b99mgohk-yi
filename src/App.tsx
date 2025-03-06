@@ -12,38 +12,31 @@ import Terms from './pages/Terms';
 import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
-  return (
-    <HelmetProvider>
-      {/* Your app components */}
-    </HelmetProvider>
-  );
-}
-
-function App() {
   const location = useLocation();
 
-  // Scroll to the top whenever the route changes
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-amber-50 to-amber-100">
-      <Header />
-      <main className="flex-grow">
-        <AnimatePresence mode="wait">
-          <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Game />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/dmca" element={<DMCA />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/terms" element={<Terms />} />
-          </Routes>
-        </AnimatePresence>
-      </main>
-      <Footer />
-    </div>
+    <HelmetProvider>
+      <div className="flex flex-col min-h-screen bg-gradient-to-b from-amber-50 to-amber-100">
+        <Header />
+        <main className="flex-grow">
+          <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Game />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/dmca" element={<DMCA />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/terms" element={<Terms />} />
+            </Routes>
+          </AnimatePresence>
+        </main>
+        <Footer />
+      </div>
+    </HelmetProvider>
   );
 }
 
