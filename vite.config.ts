@@ -12,6 +12,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
+      external: ['react-helmet-async'], // Add this if you still have issues
       output: {
         manualChunks: undefined,
       },
