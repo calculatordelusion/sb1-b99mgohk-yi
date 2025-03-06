@@ -7,48 +7,32 @@ const About: React.FC = () => {
   return (
     <>
       {/* Dynamic SEO Tags */}
-      <Helmet>
-        <title>About Us - Cookie Clicker Unblocked</title>
-        <meta
-          name="description"
-          content="Learn more about Cookie Clicker Unblocked - the best free idle cookie clicking game of 2025. Discover our story and how to play!"
-        />
-        <meta
-          name="keywords"
-          content="about cookie clicker unblocked, cookie clicker story, cookie clicker gameplay"
-        />
-        <meta
-          property="og:title"
-          content="About Us - Cookie Clicker Unblocked"
-        />
-        <meta
-          property="og:description"
-          content="Learn more about Cookie Clicker Unblocked - the best free idle cookie clicking game of 2025. Discover our story and how to play!"
-        />
-        <meta
-          property="og:url"
-          content="https://cookieclickerunblocked.app/about"
-        />
-        <meta
-          property="twitter:title"
-          content="About Us - Cookie Clicker Unblocked"
-        />
-        <meta
-          property="twitter:description"
-          content="Learn more about Cookie Clicker Unblocked - the best free idle cookie clicking game of 2025. Discover our story and how to play!"
-        />
-        <script type="application/ld+json">
-          {`
+<Helmet>
+    <title>About Us - Cookie Clicker Unblocked</title>
+    <meta name="description" content="Learn more about Cookie Clicker Unblocked - the best free idle cookie clicking game of 2025. Discover our story and how to play!" />
+    <meta property="og:title" content="About Us - Cookie Clicker Unblocked" />
+    <meta property="og:description" content="Learn more about Cookie Clicker Unblocked - the best free idle cookie clicking game of 2025. Discover our story and how to play!" />
+    <meta property="og:url" content="https://cookieclickerunblocked.app/about" />
+    <meta property="twitter:title" content="About Us - Cookie Clicker Unblocked" />
+    <meta property="twitter:description" content="Learn more about Cookie Clicker Unblocked - the best free idle cookie clicking game of 2025. Discover our story and how to play!" />
+    <link rel="canonical" href="https://cookieclickerunblocked.app/about" />
+    <script type="application/ld+json">
+        {`
             {
-              "@context": "https://schema.org",
-              "@type": "AboutPage",
-              "name": "About Us - Cookie Clicker Unblocked",
-              "description": "Learn more about Cookie Clicker Unblocked - the best free idle cookie clicking game of 2025. Discover our story and how to play!",
-              "url": "https://cookieclickerunblocked.app/about"
+                "@context": "https://schema.org",
+                "@type": "AboutPage",
+                "name": "About Us - Cookie Clicker Unblocked",
+                "description": "Learn more about Cookie Clicker Unblocked - the best free idle cookie clicking game of 2025. Discover our story and how to play!",
+                "url": "https://cookieclickerunblocked.app/about",
+                "author": {
+                  "@type": "Organization",
+                  "name": "Cookie Clicker Unblocked Team"
+                },
+                "datePublished": "2025-01-01"
             }
-          `}
-        </script>
-      </Helmet>
+        `}
+    </script>
+</Helmet>
 
       {/* About Page Content */}
       <motion.div
